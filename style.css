@@ -4,10 +4,15 @@
     box-sizing: border-box;
     font-family: Futura-Bold;
 }
+*::selection{
+    color: white;
+    background: #000;
+}
 @font-face {
     font-family: 'Futura-Bold';
     src: url('Futura-Bold.ttf') format('truetype');
   }
+
 html, body{
     height: 100%;
     width: 100%;
@@ -18,7 +23,7 @@ html, body{
     width: 100%;
     padding: 0 3vh;
     padding-top: 13vw;
-    
+    position: relative; 
 }
 .page1 h1{
     font-size: 16vw;
@@ -28,3 +33,24 @@ html, body{
     letter-spacing: -9.8px; 
 
 }
+.page1 .videoCont{
+    height: 100vh;
+    width: 100%;
+    margin-top: 2.5vh;
+}
+.videoCont video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.play{
+    background: #000;
+    color: white;
+    position: fixed;
+    padding: 3.5vh 2.3vh;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+    font-family: Futura-Bold;
+}
+
