@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+
 var videoContainer = document.querySelector(".videoCont");
 var playbtn = document.querySelector(".play");
 
