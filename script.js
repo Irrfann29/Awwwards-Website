@@ -1,3 +1,5 @@
+
+
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true
@@ -19,13 +21,23 @@ videoContainer.addEventListener("mouseleave", function() {
     })
 })
 videoContainer.addEventListener("mousemove", function(dets) {
+    const rect = videoContainer.getBoundingClientRect();
+    const x = dets.clientX - rect.left;
+    const y = dets.clientY - rect.top;
     gsap.to(playbtn,{
         duration : 0.5,
         delay :0.1,
-        left: dets.clientX - 30,
-        top : dets.clientY -30,
+        left: x - 30,
+        top: y - 30,
     })
 })
+window.addEventListener("onscroll", function () {
+    gsap.to(playbtn, {
+        opacity: 0,
+        scale: 0,
+        duration: 0.3,
+    });
+});
 gsap.from(".page1 h1",{
     y: 100,
     delay:0.4,
