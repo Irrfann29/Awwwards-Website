@@ -31,7 +31,8 @@ gsap.from(".page1 h1",{
     delay:0.4,
     duration : 0.7,
     stagger : 0.2,
-    opacity : 0.2,
+    opacity : 0,
+    ease: "power3.out",
 })
 gsap.from(".videoCont",{
     y: 100,
