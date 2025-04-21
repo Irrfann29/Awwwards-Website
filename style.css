@@ -93,24 +93,35 @@ html, body{
     justify-content: center;
 }
 .page2 .element .desc{
+    z-index: 9;
     position: absolute;
     background: rgb(206, 200, 177);
-    padding: 1.8vh 12vh;
+    padding: 2vh 5vh;
+    border-radius: 23px;
 }
 
-.page2 .element:hover{
+/* .page2 .element:hover{
     cursor: pointer;
     transform: scale(1.03);
     transition: all 0.3s ease-in-out;
-}
+} */
 .subdesc{
+
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background: red;
-    
+    gap: 7vh;  
 }
+.subdesc .desc2{
+    font-family:  Helvetica, sans-serif;
+    font-weight: 100;
+}
+.subdesc .desc1{
+    font-family: Futura-Bold;
+    font-weight: 100;
+}
+
 
 
 @media (max-width: 768px) {
