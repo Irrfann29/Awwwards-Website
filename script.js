@@ -53,3 +53,29 @@ gsap.from(".videoCont",{
     stagger : 0.2,
     opacity : 0,
 })
+
+var buyItems= document.querySelector("#page4")
+
+buyItems.addEventListener("mouseenter",function(){
+    gsap.to("#movecurs",{
+        opacity : 1,
+        scale : 1,
+    })
+})
+buyItems.addEventListener("mouseleave",function(){
+    gsap.to("#movecurs",{
+        opacity : 0,
+        scale : 0,
+    })
+})
+buyItems.addEventListener("mousemove",function(dets1){
+    const rect1 = buyItems.getBoundingClientRect();
+    const x1 = dets1.clientX - rect1.left;
+    const y1 = dets1.clientY - rect1.top;
+    gsap.to("#movecurs",{
+        duration : 0.5,
+        delay :0.1,
+        left: x1 - 30,
+        top: y1 - 30,
+    })
+})

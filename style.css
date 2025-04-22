@@ -58,7 +58,7 @@ html, body{
     font-family: Futura-Bold;
 }
 .page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 0 3vh;
     display: flex;
@@ -130,7 +130,7 @@ html, body{
 
 
 #page3{
-    min-height: 55vh;
+    min-height: 30vh;
     width: 100vw;
     padding: 5vh 3vh;
     display: flex;
@@ -162,6 +162,9 @@ html, body{
     line-height: 7.8vh;
     letter-spacing: -0.6px; 
 }
+#page4{
+    position: relative;
+}
 #page4 .comp{
     min-height: 100vh;
     width: 100vw;
@@ -192,8 +195,20 @@ html, body{
     letter-spacing: 1px;
     line-height: 30px;
 }
+#movecurs{
+    height: 30vh;
+    width: 30vh;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+    z-index: -1;
+    transform: translate(50%,-50%);
 
-@media (max-width: 768px) {
+}
+
+@media (max-width: 600px) {
     .page1 h1{
         font-size: 14.5vw;
         line-height: 15vw;
@@ -213,10 +228,44 @@ html, body{
         min-height: 60vh;
         }
 
-
     .videoCont video{
-        height: 25vh;
+        height: 100%;
         object-fit: cover;
+    }
+    #page3{
+        min-height: 100vh;
+        width: 100vw;
+        padding: 5vh 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5vh;
+        text-align: center;
+
+    }
+    #page4{
+        padding: 0vh 7vh;
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5vh;
+    }
+    #page4 .comp{
+        
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5vh;
+    }
+    #page4 .comp img{
+        height: 88%;
     }
     
 
