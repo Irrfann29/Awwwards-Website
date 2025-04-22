@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Futura-Bold;
+    
+}
+html{
+    background-color: #F7F7F7;
 }
 *::selection{
     color: white;
@@ -82,10 +86,6 @@ html, body{
     height: 100%;
     object-fit: cover;
 }
-#page3{
-    height: 100vh;
-    width: 100vh;
-}
 .page2 .element{
     position: relative;
     display: flex;
@@ -100,13 +100,13 @@ html, body{
     border-radius: 23px;
 }
 
-/* .page2 .element:hover{
+.page2 .element:hover{
     cursor: pointer;
     transform: scale(1.03);
     transition: all 0.3s ease-in-out;
-} */
+}
 .subdesc{
-
+    
     width: 100%;
     display: flex;
     align-items: center;
@@ -121,8 +121,77 @@ html, body{
     font-family: Futura-Bold;
     font-weight: 100;
 }
+#a2{
+    background-color: #8AAAD6;
+}
+#a3{
+    background-color: #FFFFFF;
+}
 
 
+#page3{
+    min-height: 55vh;
+    width: 100vw;
+    padding: 5vh 3vh;
+    display: flex;
+   
+}
+#page3 .p3part1{
+    width: 67%;
+}
+#page3 .p3part2 p{
+    font-size: 2.2vh;
+    font-family: Helvetica;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    gap: 2vh;
+}
+#page3 .p3part2 a{
+    font-size: 1.8vh;
+    font-family: Helvetica;
+    letter-spacing: 0.1px;
+    gap: 2vh;
+    color: #000;
+    font-weight: 100;
+    text-decoration:none ;
+}
+#page3 .p3part1 h1{
+    font-size: 7.8vh;
+    text-transform: uppercase;
+    font-family:Futura-Bold;
+    line-height: 7.8vh;
+    letter-spacing: -0.6px; 
+}
+#page4 .comp{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+.comp .subcomp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vh;
+}
+.comp .subcomp img{
+
+    height: 100%;
+
+    object-fit: cover;
+}
+.comp .subcomp p{
+    font-size: 1.6vh;
+    font-family:  Helvetica;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
 
 @media (max-width: 768px) {
     .page1 h1{
