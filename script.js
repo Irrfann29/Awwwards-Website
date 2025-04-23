@@ -31,14 +31,28 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
-gsap.to(".nav .logo",{
+gsap.to(".logo svg",{
     transform:"translateY(-125%)",
     scrollTrigger:{
         trigger : ".page1",
         scroller: "#main",
-        markers : true,
         start : "top 0",
-        end: "top -10%",
+        end: "top -25%",
+        scrub : true
+
+    }
+
+})
+gsap.to(".lists ul",{
+    transform:"translateY(-125%)",
+    opacity : "0",
+    scrollTrigger:{
+        trigger : ".page1",
+        scroller: "#main",
+        start : "top 0",
+        end: "top -25%",
+        scrub : true,
+        
 
     }
 
