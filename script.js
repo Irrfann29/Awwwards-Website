@@ -75,7 +75,8 @@ buyItems.addEventListener("mousemove",function(dets1){
     gsap.to("#movecurs",{
         duration : 0.5,
         delay :0.1,
-        left: x1 - 30,
-        top: y1 - 30,
+        left: x1 - 115,
+        top: y1 - 115,
+        ease: "power3.out",
     })
 })

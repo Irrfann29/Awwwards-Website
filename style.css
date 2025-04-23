@@ -57,7 +57,71 @@ html, body{
     scale: 0;
     font-family: Futura-Bold;
 }
+.text{
+    text-align: center;
+    margin: 5vh 0vh;
+    margin-top: 12vh;
+    line-height: 8vh;
+    gap: 10vh;
+}
+.text h1{
+    font-size: 7.8vh;
+    font-family: Futura-Bold;
+    text-transform: uppercase;
+    letter-spacing: -2px; 
+    margin-bottom: 3.8vh;
+}
+.text p{
+    font-size: 2.05vh;
+    font-family: Helvetica;
+    letter-spacing: 0.01px;
+    line-height: 4vh;
+    gap: 2vh;
+}
+.text a{
+    font-size: 1.5vh;
+    font-family: Helvetica;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    padding-bottom: 8px;
+    color: black;
+    border-bottom: solid transparent 0.5px;
+}
+.underline-hover {
+    position: relative;
+  }
+  
+  .underline-hover::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.5px;
+    left: 0;
+    bottom: 0;
+    background: black;
+    transition: 0.3s ease;
+  }
+
+  .underline-hover:hover::after {
+    width: 100%;
+  }
+  .text2{
+    margin: 1vh 3vh;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 0.5px solid black;
+
+  }
+  .text2 p{
+    font-family: Helvetica;
+    font-weight: 100;
+    font-size: 1.7vh;
+  }
+  
+  
 .page2{
+
     min-height: 100vh;
     width: 100%;
     padding: 0 3vh;
@@ -68,7 +132,6 @@ html, body{
 .page2 .element{
     height: 98%;
     width: 32.5%;
-    margin-top: 2vh;;
 }
 
 #elem1 img{
@@ -147,13 +210,14 @@ html, body{
     gap: 2vh;
 }
 #page3 .p3part2 a{
-    font-size: 1.8vh;
+    font-size: 1.6vh;
     font-family: Helvetica;
-    letter-spacing: 0.1px;
+    letter-spacing: 1px;
     gap: 2vh;
     color: #000;
     font-weight: 100;
     text-decoration:none ;
+    padding-bottom: 8px;
 }
 #page3 .p3part1 h1{
     font-size: 7.8vh;
@@ -164,6 +228,7 @@ html, body{
 }
 #page4{
     position: relative;
+    margin-bottom: 15vh;
 }
 #page4 .comp{
     min-height: 100vh;
@@ -195,9 +260,12 @@ html, body{
     letter-spacing: 1px;
     line-height: 30px;
 }
+.price{
+    letter-spacing: 0.5px;
+}
 #movecurs{
-    height: 30vh;
-    width: 30vh;
+    height: 35vh;
+    width: 35vh;
     background-color: #ffffff;
     position: absolute;
     border-radius: 50%;
@@ -206,6 +274,35 @@ html, body{
     z-index: -1;
     transform: translate(50%,-50%);
 
+}
+.btmtxt2{
+    margin: 0vh 3vh;
+    text-align: center;
+
+    
+
+}
+.btmtxt2 h1{
+    font-size: 7.8vh;
+    font-family: Futura-Bold;
+    text-transform: uppercase;
+    letter-spacing: -2px; 
+    margin-bottom: 3.8vh;
+    text-align: center;
+    margin: 10vh 0vh;
+}
+.btmtxt2 button{
+    font-size: 1.7vh;
+    font-weight: 100;
+    font-family: Helvetica;
+    letter-spacing: 0.5px;
+    line-height: 4vh;
+    gap: 2vh;
+    background-color: black;
+    color: white;
+    padding: 1.8vh 10vh;
+    border-radius: 10vh;
+    font-weight: bold;
 }
 
 @media (max-width: 600px) {
