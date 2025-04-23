@@ -1,53 +1,103 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Futura-Bold;
-    
+
 }
-html{
+
+html {
     background-color: #F7F7F7;
 }
-*::selection{
+
+*::selection {
     color: white;
     background: #000;
 }
+
 @font-face {
     font-family: 'Futura-Bold';
     src: url('Futura-Bold.ttf') format('truetype');
-  }
+}
 
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
 
 }
-.page1{
+
+.nav {
+    position: fixed;
+    /* background-color: grey; */
+    /* height: 100px; */
+    width: 100%;
+    z-index: 1000;
+    padding: 3vh;
+    display: flex;
+    justify-content: space-between;
+}
+.nav .logo {
+    display: flex;
+    flex-direction: column;
+    gap: 14vh;
+    height: 85px;
+    /* overflow: hidden; */
+    
+}
+
+
+.nav .lists ul {
+    display: flex;
+    align-items: center;
+    gap: 8vh;
+
+}
+
+.nav .lists ul li {
+    cursor: pointer;
+    list-style: none;
+    font-family: Helvetica;
+    font-size: 1.6vh;
+    margin: 1vh 1.1vh;
+    font-weight: 500;
+    padding-bottom: 6px ;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.page1 {
     min-height: 100vh;
     width: 100%;
     padding: 0 3vh;
     padding-top: 13vw;
-    position: relative; 
+    position: relative;
 }
-.page1 h1{
+
+.page1 h1 {
     font-size: 16vw;
     text-transform: uppercase;
-    font-family:Futura-Bold;
+    font-family: Futura-Bold;
     line-height: 14vw;
-    letter-spacing: -9.8px; 
+    letter-spacing: -9.8px;
 
 }
-.page1 .videoCont{
-    
+
+.page1 .videoCont {
+
     width: 100%;
     margin-top: 2.5vh;
 }
-.videoCont video{
+
+.videoCont video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.play{
+
+.play {
     background: #000;
     color: white;
     position: fixed;
@@ -57,28 +107,32 @@ html, body{
     scale: 0;
     font-family: Futura-Bold;
 }
-.text{
+
+.text {
     text-align: center;
     margin: 5vh 0vh;
     margin-top: 12vh;
     line-height: 8vh;
     gap: 10vh;
 }
-.text h1{
+
+.text h1 {
     font-size: 7.8vh;
     font-family: Futura-Bold;
     text-transform: uppercase;
-    letter-spacing: -2px; 
+    letter-spacing: -2px;
     margin-bottom: 3.8vh;
 }
-.text p{
+
+.text p {
     font-size: 2.05vh;
     font-family: Helvetica;
     letter-spacing: 0.01px;
     line-height: 4vh;
     gap: 2vh;
 }
-.text a{
+
+.text a {
     font-size: 1.5vh;
     font-family: Helvetica;
     letter-spacing: 0.5px;
@@ -87,11 +141,12 @@ html, body{
     color: black;
     border-bottom: solid transparent 0.5px;
 }
+
 .underline-hover {
     position: relative;
-  }
-  
-  .underline-hover::after {
+}
+
+.underline-hover::after {
     content: "";
     position: absolute;
     width: 0;
@@ -100,27 +155,29 @@ html, body{
     bottom: 0;
     background: black;
     transition: 0.3s ease;
-  }
+}
 
-  .underline-hover:hover::after {
+.underline-hover:hover::after {
     width: 100%;
-  }
-  .text2{
+}
+
+.text2 {
     margin: 1vh 3vh;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     border-bottom: 0.5px solid black;
 
-  }
-  .text2 p{
+}
+
+.text2 p {
     font-family: Helvetica;
     font-weight: 100;
     font-size: 1.7vh;
-  }
-  
-  
-.page2{
+}
+
+
+.page2 {
 
     min-height: 100vh;
     width: 100%;
@@ -129,33 +186,38 @@ html, body{
     justify-content: space-between;
 
 }
-.page2 .element{
+
+.page2 .element {
     height: 98%;
     width: 32.5%;
 }
 
-#elem1 img{
+#elem1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-#elem2 img{
+
+#elem2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-#elem3 img{
+
+#elem3 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.page2 .element{
+
+.page2 .element {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.page2 .element .desc{
+
+.page2 .element .desc {
     z-index: 9;
     position: absolute;
     background: rgb(206, 200, 177);
@@ -163,74 +225,85 @@ html, body{
     border-radius: 23px;
 }
 
-.page2 .element:hover{
+.page2 .element:hover {
     cursor: pointer;
     transform: scale(1.03);
     transition: all 0.3s ease-in-out;
 }
-.subdesc{
-    
+
+.subdesc {
+
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 7vh;  
+    gap: 7vh;
 }
-.subdesc .desc2{
-    font-family:  Helvetica, sans-serif;
+
+.subdesc .desc2 {
+    font-family: Helvetica, sans-serif;
     font-weight: 100;
 }
-.subdesc .desc1{
+
+.subdesc .desc1 {
     font-family: Futura-Bold;
     font-weight: 100;
 }
-#a2{
+
+#a2 {
     background-color: #8AAAD6;
 }
-#a3{
+
+#a3 {
     background-color: #FFFFFF;
 }
 
 
-#page3{
+#page3 {
     min-height: 30vh;
     width: 100vw;
     padding: 5vh 3vh;
     display: flex;
-   
+
 }
-#page3 .p3part1{
+
+#page3 .p3part1 {
     width: 67%;
 }
-#page3 .p3part2 p{
+
+#page3 .p3part2 p {
     font-size: 2.2vh;
     font-family: Helvetica;
     line-height: 25px;
     letter-spacing: 0.1px;
     gap: 2vh;
 }
-#page3 .p3part2 a{
+
+#page3 .p3part2 a {
     font-size: 1.6vh;
     font-family: Helvetica;
     letter-spacing: 1px;
     gap: 2vh;
     color: #000;
     font-weight: 100;
-    text-decoration:none ;
+    text-decoration: none;
     padding-bottom: 8px;
 }
-#page3 .p3part1 h1{
+
+#page3 .p3part1 h1 {
     font-size: 7.8vh;
     text-transform: uppercase;
-    font-family:Futura-Bold;
+    font-family: Futura-Bold;
     line-height: 7.8vh;
-    letter-spacing: -0.6px; 
+    letter-spacing: -0.6px;
 }
-#page4{
+
+#page4 {
     position: relative;
     margin-bottom: 15vh;
 }
-#page4 .comp{
+
+#page4 .comp {
     min-height: 100vh;
     width: 100vw;
     display: flex;
@@ -239,7 +312,8 @@ html, body{
     gap: 5px;
 
 }
-.comp .subcomp{
+
+.comp .subcomp {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,23 +321,27 @@ html, body{
     height: 90vh;
     width: 100vh;
 }
-.comp .subcomp img{
+
+.comp .subcomp img {
 
     height: 100%;
 
     object-fit: cover;
 }
-.comp .subcomp p{
+
+.comp .subcomp p {
     font-size: 1.6vh;
-    font-family:  Helvetica;
+    font-family: Helvetica;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 30px;
 }
-.price{
+
+.price {
     letter-spacing: 0.5px;
 }
-#movecurs{
+
+#movecurs {
     height: 35vh;
     width: 35vh;
     background-color: #ffffff;
@@ -272,26 +350,29 @@ html, body{
     opacity: 0;
     scale: 0;
     z-index: -1;
-    transform: translate(50%,-50%);
+    transform: translate(50%, -50%);
 
 }
-.btmtxt2{
+
+.btmtxt2 {
     margin: 0vh 3vh;
     text-align: center;
 
-    
+
 
 }
-.btmtxt2 h1{
+
+.btmtxt2 h1 {
     font-size: 7.8vh;
     font-family: Futura-Bold;
     text-transform: uppercase;
-    letter-spacing: -2px; 
+    letter-spacing: -2px;
     margin-bottom: 3.8vh;
     text-align: center;
     margin: 10vh 0vh;
 }
-.btmtxt2 button{
+
+.btmtxt2 button {
     font-size: 1.7vh;
     font-weight: 100;
     font-family: Helvetica;
@@ -306,30 +387,33 @@ html, body{
 }
 
 @media (max-width: 600px) {
-    .page1 h1{
+    .page1 h1 {
         font-size: 14.5vw;
         line-height: 15vw;
-        letter-spacing: -2px; 
+        letter-spacing: -2px;
     }
-    .page2{
+
+    .page2 {
         flex-direction: column;
         align-items: center;
         gap: 8px;
     }
-    .page2 .element{
+
+    .page2 .element {
         width: 95%;
         margin-top: 0vh;
     }
 
-    .page1{
+    .page1 {
         min-height: 60vh;
-        }
+    }
 
-    .videoCont video{
+    .videoCont video {
         height: 100%;
         object-fit: cover;
     }
-    #page3{
+
+    #page3 {
         min-height: 100vh;
         width: 100vw;
         padding: 5vh 3vh;
@@ -341,7 +425,8 @@ html, body{
         text-align: center;
 
     }
-    #page4{
+
+    #page4 {
         padding: 0vh 7vh;
         min-height: 100vh;
         width: 100vw;
@@ -351,8 +436,9 @@ html, body{
         justify-content: center;
         gap: 5vh;
     }
-    #page4 .comp{
-        
+
+    #page4 .comp {
+
         min-height: 100vh;
         width: 100vw;
         display: flex;
@@ -361,11 +447,11 @@ html, body{
         justify-content: center;
         gap: 5vh;
     }
-    #page4 .comp img{
+
+    #page4 .comp img {
         height: 88%;
     }
-    
 
-    
+
+
 }
-
