@@ -45,7 +45,12 @@ body {
 .nav .logo svg{
     display: block;
 }
-
+.nav .lists{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5vh;
+}
 
 .nav .lists ul {
     display: flex;
@@ -63,13 +68,22 @@ body {
     font-weight: 500;
     padding-bottom: 6px ;
 }
-.nav .lists{
+.icons {
     display: flex;
-    
-}
+    background-color: #F7F7F7;
+    align-items: flex-start;
+    gap: 10vh;
+    padding: 1vh 3vh;
+    border-radius: 10vh;
+    /* margin-top: 0vh; */
+    margin-bottom: 2vh;
+    margin-right: 2vh;
 
+}
 .icons i{
     cursor: pointer;
+    font-size: 2.6vh;
+    font-weight:lighter;
 }
 .page1 {
     min-height: 100vh;
@@ -214,6 +228,8 @@ body {
 }
 
 .page2 .element {
+    /* z-index: -9; */
+    overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
@@ -221,7 +237,6 @@ body {
 }
 
 .page2 .element .desc {
-    z-index: 9;
     position: absolute;
     background: rgb(206, 200, 177);
     padding: 2vh 5vh;
@@ -235,7 +250,7 @@ body {
 }
 
 .subdesc {
-
+   
     width: 100%;
     display: flex;
     align-items: center;
@@ -261,6 +276,9 @@ body {
     background-color: #FFFFFF;
 }
 
+.element img{
+    z-index: -1;
+}
 
 #page3 {
     min-height: 30vh;
@@ -361,8 +379,6 @@ body {
     margin: 0vh 3vh;
     text-align: center;
 
-
-
 }
 
 .btmtxt2 h1 {
@@ -388,8 +404,92 @@ body {
     border-radius: 10vh;
     font-weight: bold;
 }
+.btmtxt2 p{
+    font-size: 2.2vh;
+    font-weight: 100;
+    font-family: Helvetica;
+    letter-spacing: 0.5px;
+    line-height: 3vh;
+    margin-top: 3vh;
+    margin-bottom: 8vh;
 
+}
+.page5{
+    height: 100vh;
+    width: 100%;
+    padding: 2vh 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5vh;
+    overflow: hidden;
+}
+.impact{
+    padding-right: 14vh;
+}
+.impact h1{
+    font-size: 3.4vh;
+}
+.page5 p{
+    font-size: 2.2vh;
+    font-family: Helvetica;
+    letter-spacing: 0.1px;
+    line-height: 3vh;
+    margin-top: 5vh;
+    /* margin-bottom: 8vh; */
+}
+.impimg{
+    height: 100%;
+    width: 100%;
+}
+.impimg img{
+    height: 100%;
+    object-fit: cover;
+}
+.impact button{
+    background: transparent;
+    border: none;
+    margin-top: 5vh;
+    padding-bottom: 1vh;
+    font-family: Helvetica;
+    font-size: 1.5vh;
+    letter-spacing: 0.2vh;
+}
+.footer{
+    min-height: 100vh;
+    padding: 0vh 3vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .connect p{
+    font-family:  Helvetica;
+    text-transform: uppercase;
+    font-size: 1.6vh;
+    margin-bottom: 3vh;
+    letter-spacing: 0.1px;
+    color: #616469;
+    font-weight:100;
+}
+.footer .connect ul{
+    list-style: none;
+    
+
+}
+.footer .connect ul li{
+    font-family: Helvetica,bold;
+    font-size: 1.9vh;
+    margin: 1vh 1.1vh;
+    font-weight: 500;
+    padding-bottom: 6px ;
+    line-height: 1.5vh;
+}
 @media (max-width: 600px) {
+    .nav .lists ul{
+        display: none;
+    }
+    
     .page1 h1 {
         font-size: 14.5vw;
         line-height: 15vw;
